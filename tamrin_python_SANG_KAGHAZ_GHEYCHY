@@ -1,0 +1,10 @@
+nn=int(input('بنویسید'))
+p=False
+if nn <=1:
+    p=False
+if nn == 2:
+    p=True
+elif >= 3 :
+    for i range()
+    
+    
