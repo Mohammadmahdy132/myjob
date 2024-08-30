@@ -1,20 +1,24 @@
 ER=0
+Pass = str()
 while (True):
-    Pass = int(input("لطفا یک رمز وارد وارد کنید"))
-    if Pass == int():
+    K = input("لطفا یک رمز وارد کنید:")
+    m = K.isdigit()
+    if  m == True:
         print('بفرمایید')
+        Pass = K
         break
     else:
         print("لطفا دوباره وارد کنید")
-        del Pass
+    del K
 while(True):
-    ipt = int(input("رمز تان را وارد کنید"))
+    ipt = input("رمز تان را وارد کنید:")
     if ipt == Pass:
         print("خوش آمدید")
+        break    
+    elif ER == 5 :
+        print("شما دیگر نمی توانید رمز وارد کنید")
         break
     else :
         print("رمز اشتباه است لطفا دوباره وارد کنید")
         ER +=1
-    if ER == 5 :
-        print("شما دیگر نمی توانید رمز وارد کنید")
-        break
+
